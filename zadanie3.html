@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 3</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>1. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Высота цилиндра равна радиусу основания. Площадь боковой поверхности цилиндра равна 5√2. Найдите площадь боковой поверхности конуса.</p>
+    <img src="z3_1.png" alt="Конус" />
+    <input type="text" id="input1" />
+    <button onclick="check('1', '5')">Проверить</button>
+    <div id="result1"></div>
+  </div>
+
+  <div class="card">
+    <h2>2. Впишите правильный ответ</h2>
+    <p>Найдите объём многогранника, вершинами которого являются вершины A, B, C, C1 правильной треугольной призмы ABCA1B1C1, площадь основания которой равна 6, а боковое ребро равно 9.</p>
+    <img src="z3_2.png" alt="Призма" />
+    <input type="text" id="input2" />
+    <button onclick="check('2', '18')">Проверить</button>
+    <div id="result2"></div>
+  </div>
+
+  <div class="card">
+    <h2>3. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=8, BC=7, AA1=6. Найдите объём многогранника, вершинами которого являются точки A, B, C, A1, B1, C1.</p>
+    <img src="z3_3.png" alt="Параллелепипед" />
+    <input type="text" id="input3" />
+    <button onclick="check('3', '168')">Проверить</button>
+    <div id="result3"></div>
+  </div>
+  
+  <div class="card">
+    <h2>4. Впишите правильный ответ</h2>
+    <p>Шар, объём которого равен 18, вписан в цилиндр. Найдите объём цилиндра.</p>
+    <img src="z3_4.png" alt="Шар" />
+    <input type="text" id="input4" />
+    <button onclick="check('4', '27')">Проверить</button>
+    <div id="result4"></div>
+  </div>
+  
+  <div class="card">
+    <h2>5. Впишите правильный ответ</h2>
+    <p>Найдите объём многогранника, вершинами которого являются вершины A, B, C, D, B1 прямоугольного параллелепипеда ABCDA1B1C1D1, у которого AB=9, BC=3, BB1=8.</p>
+    <img src="z3_5.png" alt="Пирамида" />
+    <input type="text" id="input5" />
+    <button onclick="check('5', '72')">Проверить</button>
+    <div id="result5"></div>
+  </div>
+
+  <div class="card">
+    <h2>6. Впишите правильный ответ</h2>
+    <p>Цилиндр вписан в прямоугольный параллелепипед. Радиус основания и высота цилиндра равны 2. Найдите объём параллелепипеда.</p>
+    <img src="z3_6.png" alt="Цилиндр" />
+    <input type="text" id="input6" />
+    <button onclick="check('6', '32')">Проверить</button>
+    <div id="result6"></div>
+  </div>
+
+  <div class="card">
+    <h2>7. Впишите правильный ответ</h2>
+    <p>Через среднюю линию основания треугольной призмы, объём которой равен 52, проведена плоскость, параллельная боковому ребру. Найдите объём отсечённой треугольной призмы.</p>
+    <img src="z3_7.png" alt="Призма" />
+    <input type="text" id="input7" />
+    <button onclick="check('7', '13')">Проверить</button>
+    <div id="result7"></div>
+  </div>
+  
+  <div class="card">
+    <h2>8. Впишите правильный ответ</h2>
+    <p>Через среднюю линию основания треугольной призмы проведена плоскость, параллельная боковому ребру. Найдите объём этой призмы, если объём отсечённой треугольной призмы равен 15.</p>
+    <img src="z3_7.png" alt="Призма" />
+    <input type="text" id="input8" />
+    <button onclick="check('8', '60')">Проверить</button>
+    <div id="result8"></div>
+  </div>
+  
+  <div class="card">
+    <h2>9. Впишите правильный ответ</h2>
+    <p>Дана правильная треугольная призма ABCA1B1C1 , площадь основания которой равна 8, а боковое ребро равно 6. Найдите объём многогранника, вершинами которого являются точки A, C, A1, B1, C1 .</p>
+    <img src="z3_8.png" alt="Призма" />
+    <input type="text" id="input9" />
+    <button onclick="check('9', '32')">Проверить</button>
+    <div id="result9"></div>
+  </div>
+
+  <div class="card">
+    <h2>10. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=6, BC=5, AA1=4. Найдите объём многогранника, вершинами которого являются точки A, B, C, B1 .</p>
+    <img src="z3_9.png" alt="Параллелепипед" />
+    <input type="text" id="input10" />
+    <button onclick="check('10', '20')">Проверить</button>
+    <div id="result10"></div>
+  </div>
+
+  <div class="card">
+    <h2>11. Впишите правильный ответ</h2>
+    <p>Через среднюю линию основания правильной треугольной призмы, объём которой равен 84, проведена плоскость, параллельная боковому ребру. Найдите объём отсечённой треугольной призмы.</p>
+    <img src="z3_10.png" alt="Призма" />
+    <input type="text" id="input11" />
+    <button onclick="check('11', '21')">Проверить</button>
+    <div id="result11"></div>
+  </div>
+  
+  <div class="card">
+    <h2>12. Впишите правильный ответ</h2>
+    <p>Дано два цилиндра. Объём первого цилиндра равен 15. У второго цилиндра высота в 3 раза меньше, а радиус основания в 2 раза больше, чем у первого. Найдите объём второго цилиндра.</p>
+    <img src="z3_11.png" alt="Цилиндр" />
+    <input type="text" id="input12" />
+    <button onclick="check('12', '20')">Проверить</button>
+    <div id="result12"></div>
+  </div>
+  
+  <div class="card">
+    <h2>13. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Объём цилиндра равен 30. Найдите объём конуса.</p>
+    <img src="z3_12.png" alt="описание" />
+    <input type="text" id="input13" />
+    <button onclick="check('13', '10')">Проверить</button>
+    <div id="result13"></div>
+  </div>
+  
+  <div class="card">
+    <h2>14. Впишите правильный ответ.</h2>
+    <p>Найдите объём многогранника, вершинами которого являются вершины A, B, C, D, A1 прямоугольного параллелепипеда ABCDA1B1C1D1, у которого AB=3, AD=9, AA1=4.</p>
+    <img src="z3_5.png" alt="Пирамида" />
+    <input type="text" id="input14" />
+    <button onclick="check('14', '36')">Проверить</button>
+    <div id="result14"></div>
+  </div>
+
+  <div class="card">
+    <h2>15. Впишите правильный ответ.</h2>
+    <p>Конус вписан в шар. Радиус основания конуса равен радиусу шара. Объём шара равен 60. Найдите объём конуса.</p>
+    <img src="z3_13.png" alt="Шар" />
+    <input type="text" id="input15" />
+    <button onclick="check('15', '15')">Проверить</button>
+    <div id="result15"></div>
+  </div>
+
+  <div class="card">
+    <h2>16. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=7, BC=6, AA1=5. Найдите объём многогранника, вершинами которого являются точки A, B, C, B1 .</p>
+    <img src="z3_14.png" alt="Пирамида" />
+    <input type="text" id="input16" />
+    <button onclick="check('16', '35')">Проверить</button>
+    <div id="result16"></div>
+  </div>
+  
+  <div class="card">
+    <h2>17. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что BC=9, CD=3, CC1=7. Найдите объём многогранника, вершинами которого являются точки A, B, C, D, C1.</p>
+    <img src="z3_5.png" alt="Пирамида" />
+    <input type="text" id="input17" />
+    <button onclick="check('17', '63')">Проверить</button>
+    <div id="result17"></div>
+  </div>
+  
+  <div class="card">
+    <h2>18. Впишите правильный ответ</h2>
+    <p>Во сколько раз уменьшится объём конуса, если его высота уменьшится в 9 раз, а радиус основания останется прежним?</p>
+    <img src="z3_12.png" alt="Конус" />
+    <input type="text" id="input18" />
+    <button onclick="check('18', '9')">Проверить</button>
+    <div id="result18"></div>
+  </div>
+  
+  <div class="card">
+    <h2>19. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=5, BC=4, AA1=3. Найдите объём многогранника, вершинами которого являются точки A, B, C, D, A1, B1 .</p>
+    <img src="z3_9.png" alt="Параллелепипед" />
+    <input type="text" id="input19" />
+    <button onclick="check('19', '30')">Проверить</button>
+    <div id="result19"></div>
+  </div>
+  
+  <div class="card">
+    <h2>20. Впишите правильный ответ</h2>
+    <p>Шар вписан в цилиндр. Площадь полной поверхности цилиндра равна 30. Найдите площадь поверхности шара.</p>
+    <img src="z3_4.png" alt="Шар" />
+    <input type="text" id="input20" />
+    <button onclick="check('20', '20')">Проверить</button>
+    <div id="result20"></div>
+  </div>
+  
+  <div class="card">
+    <h2>21. Впишите правильный ответ</h2>
+    <p>Найдите объём многогранника, вершинами которого являются вершины A, B, C, B1 правильной треугольной призмы ABCA1B1C1, площадь основания которой равна 3, а боковое ребро равно 8.</p>
+    <img src="z3_15.png" alt="Призма" />
+    <input type="text" id="input21" />
+    <button onclick="check('21', '8')">Проверить</button>
+    <div id="result21"></div>
+  </div>
+  
+  <div class="card">
+    <h2>22. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Объём цилиндра равен 6. Найдите объём конуса.</p>
+    <img src="z3_12.png" alt="Цилиндр" />
+    <input type="text" id="input22" />
+    <button onclick="check('22', '2')">Проверить</button>
+    <div id="result22"></div>
+  </div>>
+  
+  <div class="card">
+    <h2>23. Впишите правильный ответ</h2>
+    <p>Площадь боковой поверхности треугольной призмы равна 24. Через среднюю линию основания призмы проведена плоскость, параллельная боковому ребру. Найдите площадь боковой поверхности отсечённой треугольной призмы.</p>
+    <img src="z3_7.png" alt="Призма" />
+    <input type="text" id="input23" />
+    <button onclick="check('23', '12')">Проверить</button>
+    <div id="result23"></div>
+  </div>
+  
+  <div class="card">
+    <h2>24. Впишите правильный ответ</h2>
+    <p>Конус вписан в шар. Радиус основания конуса равен радиусу шара. Объём конуса равен 12. Найдите объём шара.</p>
+    <img src="z3_13.png" alt="Шар" />
+    <input type="text" id="input24" />
+    <button onclick="check('24', '48')">Проверить</button>
+    <div id="result24"></div>
+  </div>
+  
+  <div class="card">
+    <h2>25. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Объём конуса равен 6. Найдите объём цилиндра.</p>
+    <img src="z3_12.png" alt="Цилиндр" />
+    <input type="text" id="input25" />
+    <button onclick="check('25', '18')">Проверить</button>
+    <div id="result25"></div>
+  </div>
+  
+  <div class="card">
+    <h2>26. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=9, BC=7, AA1=6. Найдите объём многогранника, вершинами которого являются точки A, B, C, B1 .</p>
+    <img src="z3_14.png" alt="Пирамида" />
+    <input type="text" id="input26" />
+    <button onclick="check('26', '63')">Проверить</button>
+    <div id="result26"></div>
+  </div>
+  
+  <div class="card">
+    <h2>27. Впишите правильный ответ</h2>
+    <p>Шар, объём которого равен 24, вписан в цилиндр. Найдите объём цилиндра.</p>
+    <img src="z3_4.png" alt="Цилиндр" />
+    <input type="text" id="input27" />
+    <button onclick="check('27', '36')">Проверить</button>
+    <div id="result27"></div>
+  </div>
+  
+  <div class="card">
+    <h2>28. Впишите правильный ответ</h2>
+    <p>Объём куба равен 80. Найдите объём треугольной призмы, отсекаемой от куба плоскостью, проходящей через середины двух рёбер, выходящих из одной вершины, и параллельной третьему ребру, выходящему из этой же вершины.</p>
+    <img src="z3_16.png" alt="Параллелепипед" />
+    <input type="text" id="input28" />
+    <button onclick="check('28', '10')">Проверить</button>
+    <div id="result28"></div>
+  </div>
+  
+  <div class="card">
+    <h2>29. Впишите правильный ответ</h2>
+    <p>Дано два цилиндра. Объём первого цилиндра равен 18. У второго цилиндра высота в 3 раза меньше, а радиус основания в 2 раза больше, чем у первого. Найдите объём второго цилиндра.</p>
+    <img src="z3_11.png" alt="Цилиндр" />
+    <input type="text" id="input29" />
+    <button onclick="check('29', '24')">Проверить</button>
+    <div id="result29"></div>
+  </div>
+  
+  <div class="card">
+    <h2>30. Впишите правильный ответ</h2>
+    <p>Дана правильная треугольная призма ABCA1B1C1, площадь основания которой равна 4, а боковое ребро равно 6. Найдите объём многогранника, вершинами которого являются точки B, C, A1, B1, C1 .</p>
+    <img src="z3_16.png" alt="Призма" />
+    <input type="text" id="input30" />
+    <button onclick="check('30', '16')">Проверить</button>
+    <div id="result30"></div>
+  </div>
+  
+  <div class="card">
+    <h2>31. Впишите правильный ответ</h2>
+    <p>Через среднюю линию основания треугольной призмы проведена плоскость, параллельная боковому ребру. Найдите объём этой призмы, если объём отсечённой треугольной призмы равен 5.</p>
+    <img src="z3_7.png" alt="Призма" />
+    <input type="text" id="input31" />
+    <button onclick="check('31', '20')">Проверить</button>
+    <div id="result31"></div>
+  </div>
+  
+  <div class="card">
+    <h2>32. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=7, BC=6, AA1=5. Найдите объём многогранника, вершинами которого являются точки A, B, C, A1, B1, C1.</p>
+    <img src="z3_3.png" alt="Параллелепипед" />
+    <input type="text" id="input32" />
+    <button onclick="check('32', '105')">Проверить</button>
+    <div id="result32"></div>
+  </div>
+  
+  <div class="card">
+    <h2>33. Впишите правильный ответ</h2>
+    <p>Найдите объём многогранника, вершинами которого являются вершины A, B, C, C1 правильной треугольной призмы ABCA1B1C1, площадь основания которой равна 7, а боковое ребро равно 9.</p>
+    <img src="z3_2.png" alt="Призма" />
+    <input type="text" id="input33" />
+    <button onclick="check('33', '21')">Проверить</button>
+    <div id="result33"></div>
+  </div>
+    
+  <div class="card">
+    <h2>34. Впишите правильный ответ</h2>
+    <p>Через среднюю линию основания треугольной призмы проведена плоскость, параллельная боковому ребру. Площадь боковой поверхности отсечённой треугольной призмы равна 36. Найдите площадь боковой поверхности исходной призмы.</p>
+    <img src="z3_7.png" alt="Призма" />
+    <input type="text" id="input34" />
+    <button onclick="check('34', '72')">Проверить</button>
+    <div id="result34"></div>
+  </div>
+  
+  <div class="card">
+    <h2>35. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Высота цилиндра равна радиусу основания. Площадь боковой поверхности конуса равна 3√2. Найдите площадь боковой поверхности цилиндра.</p>
+    <img src="z3_1.png" alt="Цилиндр" />
+    <input type="text" id="input35" />
+    <button onclick="check('35', '6')">Проверить</button>
+    <div id="result35"></div>
+  </div>
+  
+  <div class="card">
+    <h2>36. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=6, BC=5, AA1=4. Найдите объём многогранника, вершинами которого являются точки A, B, C, D, A1, B1 .</p>
+    <img src="z3_9.png" alt="Параллелепипед" />
+    <input type="text" id="input36" />
+    <button onclick="check('36', '60')">Проверить</button>
+    <div id="result36"></div>
+  </div>
+  
+  <div class="card">
+    <h2>37. Впишите правильный ответ</h2>
+    <p>В прямоугольном параллелепипеде ABCDA1B1C1D1 известно, что AB=9, BC=6, AA1=5. Найдите объём многогранника, вершинами которого являются точки A, B, C, B1.</p>
+    <img src="z3_14.png" alt="Пирамида" />
+    <input type="text" id="input37" />
+    <button onclick="check('37', '45')">Проверить</button>
+    <div id="result37"></div>
+  </div>
+  
+  <div class="card">
+    <h2>38. Впишите правильный ответ</h2>
+    <p>Через среднюю линию основания треугольной призмы проведена плоскость, параллельная боковому ребру. Найдите объём этой призмы, если объём отсечённой треугольной призмы равен 7.</p>
+    <img src="z3_7.png" alt="Призма" />
+    <input type="text" id="input38" />
+    <button onclick="check('38', '28')">Проверить</button>
+    <div id="result38"></div>
+  </div>
+  
+  <div class="card">
+    <h2>39. Впишите правильный ответ</h2>
+    <p>Цилиндр, объём которого равен 18, описан около шара. Найдите объём шара.</p>
+    <img src="z3_4.png" alt="Цилиндр" />
+    <input type="text" id="input39" />
+    <button onclick="check('39', '12')">Проверить</button>
+    <div id="result39"></div>
+  </div>
+  
+  <div class="card">
+    <h2>40. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Объём цилиндра равен 18. Найдите объём конуса.</p>
+    <img src="z3_12.png" alt="Цилиндр" />
+    <input type="text" id="input40" />
+    <button onclick="check('40', '6')">Проверить</button>
+    <div id="result40"></div>
+  </div>
+  
+  <div class="card">
+    <h2>41. Впишите правильный ответ</h2>
+    <p>Цилиндр и конус имеют общие основание и высоту. Объём конуса равен 9. Найдите объём цилиндра.</p>
+    <img src="z3_12.png" alt="Цилиндр" />
+    <input type="text" id="input41" />
+    <button onclick="check('41', '27')">Проверить</button>
+    <div id="result41"></div>
+  </div>
+  
+  <div class="card">
+    <h2>42. Впишите правильный ответ</h2>
+    <p>Во сколько раз увеличится объём конуса, если радиус его основания увеличится в 11 раз, а высота останется прежней?</p>
+    <img src="z3_12.png" alt="Конус" />
+    <input type="text" id="input42" />
+    <button onclick="check('42', '121')">Проверить</button>
+    <div id="result42"></div>
+  </div>
+ </body>
+</html>
