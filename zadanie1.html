@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 1</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+	<h2>1. Впишите правильный ответ.</h2>
+	<p>В треугольнике ABC угол C равен 90°. AB = 10, BC =√19. Найдите cosA. </p>
+	<img src="z1_1.png" alt="Треугольник" />
+	<input type="text" id="input1" />
+	<button onclick="check('1', '0,9')">Проверить</button>
+	<div id="result1"></div>
+  </div>
+
+  <div class="card">
+	<h2>2. Впишите правильный ответ.</h2>
+	<p>Отрезки AC и BD - диаметры окружности с центром O. Угол ACB равен 41°. Найдите величину угла AOD. Ответ дайте в градусах.</p>
+	<img src="z1_2.png" alt="Окружность" />
+	<input type="text" id="input2" />
+	<button onclick="check('2', '98')">Проверить</button>
+	<div id="result2"></div>
+  </div>
+
+  <div class="card">
+	<h2>3. Впишите правильный ответ.</h2>
+	<p>В треугольнике ABC угол C равен 90°. AB = 10, AC =√51. Найдите sinA.</p>
+	<img src="z1_3.png" alt="Треугольник" />
+	<input type="text" id="input3" />
+	<button onclick="check('3', '0,7')">Проверить</button>
+	<div id="result3"></div>
+  </div>
+  
+  <div class="card">
+	<h2>4. Впишите правильный ответ.</h2>
+	<p>Найдите величину угла ACO, если его сторона CA касается окружности с центром O, отрезок CO пересекает окружность в точке B (см. рисунок), а дуга AB окружности, заключённая внутри этого угла, равна 66°. Ответ дайте в градусах. </p>
+	<img src="z1_4.png" alt="Окружность" />
+	<input type="text" id="input4" />
+	<button onclick="check('4', '24')">Проверить</button>
+	<div id="result4"></div>
+  </div>
+  
+  <div class="card">
+	<h2>5. Впишите правильный ответ.</h2>
+	<p>В треугольнике ABC угол C равен 90°. AB = 10, AC =√91. Найдите sinA.</p>
+	<img src="z1_1.png" alt="Треугольник" />
+	<input type="text" id="input5" />
+	<button onclick="check('5', '0,3')">Проверить</button>
+	<div id="result5"></div>
+  </div>
+
+  <div class="card">
+	<h2>6. Впишите правильный ответ.</h2>
+	<p>Четырёхугольник ABCD вписан в окружность. Угол ABC равен 103°, угол CAD равен 42°. Найдите угол ABD. Ответ дайте в градусах.</p>
+	<img src="z1_5.png" alt="Окружность" />
+	<input type="text" id="input6" />
+	<button onclick="check('6', '61')">Проверить</button>
+	<div id="result6"></div>
+  </div>
+
+  <div class="card">
+	<h2>7. Впишите правильный ответ.</h2>
+	<p>Четырёхугольник ABCD вписан в окружность. Угол ABD равен 61° , угол CAD равен 37° . Найдите угол ABC . Ответ дайте в градусах.</p>
+	<img src="z1_5.png" alt="Окружность" />
+	<input type="text" id="input7" />
+	<button onclick="check('7', '98')">Проверить</button>
+	<div id="result7"></div>
+  </div>
+  
+  <div class="card">
+	<h2>8. Впишите правильный ответ.</h2>
+	<p>В треугольнике ABC угол C равен 90°. AB = 5, BC = 4. Найдите cosA.</p>
+	<img src="z1_6.png" alt="Треугольник" />
+	<input type="text" id="input8" />
+	<button onclick="check('8', '0,6')">Проверить</button>
+	<div id="result8"></div>
+  </div>
+  
+  <div class="card">
+	<h2>9. Впишите правильный ответ.</h2>
+	<p>Отрезки AC и BD — диаметры окружности с центром O. Угол ACB равен 59°. Найдите угол AOD. Ответ дайте в градусах.</p>
+	<img src="z1_7.png" alt="Окружность" />
+	<input type="text" id="input9" />
+	<button onclick="check('9', '62')">Проверить</button>
+	<div id="result9"></div>
+  </div>
+
+  <div class="card">
+	<h2>10. Впишите правильный ответ.</h2>
+	<p>В треугольнике ABC сторона AB равна 3√2, угол C равен 135°. Найдите радиус описанной около этого треугольника окружности.</p>
+	<img src="z1_8.png" alt="Окружность" />
+	<input type="text" id="input10" />
+	<button onclick="check('10', '3')">Проверить</button>
+	<div id="result10"></div>
+  </div>
+
+  <div class="card">
+	<h2>11. Впишите правильный ответ</h2>
+	<p>Два угла вписанного в окружность четырехугольника равны 59° и 102°. Найдите больший из оставшихся углов. Ответ дайте в градусах.</p>
+	<img src="z1_9.png" alt="Окружность" />
+	<input type="text" id="inpu11" />
+	<button onclick="check('11', '121')">Проверить</button>
+	<div id="result11"></div>
+  </div>
+  
+  <div class="card">
+	<h2>12. Впишите правильный ответ</h2>
+	<p>Четырёхугольник ABCD вписан в окружность. Угол ABC равен 120°, угол ABD равен 43°. Найдите угол CAD. Ответ дайте в градусах.</p>
+	<img src="z1_10.png" alt="Окружность" />
+	<input type="text" id="input12" />
+	<button onclick="check('12', '77')">Проверить</button>
+	<div id="result12"></div>
+  </div>
+  
+  <div class="card">
+	<h2>13. Впишите правильный ответ</h2>
+	<p>Отрезки AC и BD — диаметры окружности с центром O. Угол AOD равен 16°. Найдите угол ACB. Ответ дайте в градусах.</p>
+	<img src="z1_7.png" alt="описание" />
+	<input type="text" id="input13" />
+	<button onclick="check('13', '82')">Проверить</button>
+	<div id="result13"></div>
+  </div>
+
+  <div class="card">
+	<h2>14. Впишите правильный ответ</h2>
+	<p>Четырёхугольник ABCD вписан в окружность. Угол ABC равен 98°, угол CAD равен 44°. Найдите угол ABD. Ответ дайте в градусах.</p>
+	<img src="z1_5.png" alt="Окружность" />
+	<input type="text" id="input14" />
+	<button onclick="check('14', '54')">Проверить</button>
+	<div id="result14"></div>
+  </div>
+
+  <div class="card">
+	<h2>15. Впишите правильный ответ</h2>
+	<p>Площадь параллелограмма ABCD равна 28. Точка E — середина стороны AD. Найдите площадь трапеции BCDE.</p>
+	<img src="z1_11.png" alt="Параллелограмм" />
+	<input type="text" id="input15" />
+	<button onclick="check('15', '21')">Проверить</button>
+	<div id="result15"></div>
+  </div>
+  
+  <div class="card">
+	<h2>16. Впишите правильный ответ</h2>
+	<p>Площадь треугольника ABC равна 24, DE - средняя линия, параллельная стороне AB. Найдите площадь трапеции ABED</p>
+	<img src="z1_12.png" alt="Треугольник" />
+	<input type="text" id="input16" />
+	<button onclick="check('16', '18')">Проверить</button>
+	<div id="result16"></div>
+  </div>
+ </body>
+</html>
