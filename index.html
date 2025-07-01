@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 1 — ЕГЭ по математике</title>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.trim();
+      const result = document.getElementById("result");
+      const correctAnswer = "13";
+
+      if (input === correctAnswer) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+    input {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Задание 1</h1>
+    <p>В треугольнике ABC угол C равен 90°, AC = 4,8, sinA = 7/25. Найдите AB.</p>
+    <img src="02c8b1e8-e3ad-4dc2-b9b0-b63864abc935.png" alt="Треугольник ABC">
+    <div>
+      <input type="text" id="answer" placeholder="Ваш ответ">
+      <button onclick="checkAnswer()">Проверить</button>
+    </div>
+    <div id="result"></div>
+  </div>
+</body>
+</html>
