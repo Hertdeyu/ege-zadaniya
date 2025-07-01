@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 1</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>1. Найдите значение выражения</h2>
+    <p>Сколько целых решений имеет неравенство: 2x + 7 &lt; 25?</p>
+    <input type="text" id="input1" />
+    <button onclick="check('1', '8')">Проверить</button>
+    <div id="result1"></div>
+  </div>
+
+  <div class="card">
+    <h2>2. Найдите длину гипотенузы</h2>
+    <p>В треугольнике ABC угол C = 90°, AC = 4,8, sinA = 7/25. Найдите AB.</p>
+    <img src="zad1_2.png" alt="Треугольник ABC" />
+    <input type="text" id="input2" />
+    <button onclick="check('2', '13')">Проверить</button>
+    <div id="result2"></div>
+  </div>
+
+  <div class="card">
+    <h2>3. Простой текстовый вопрос</h2>
+    <p>Сколько градусов в прямом угле?</p>
+    <input type="text" id="input3" />
+    <button onclick="check('3', '90')">Проверить</button>
+    <div id="result3"></div>
+  </div>
+</body>
+</html>
