@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 6</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>1. Найдите корень уравнение:</h2>
+    <img src="z6_1.png" alt="описание" />
+    <input type="text" id="input1" />
+    <button onclick="check('1', '-6')">Проверить</button>
+    <div id="result1"></div>
+  </div>
+
+  <div class="card">
+    <h2>2. Найдите корень уравнение:</h2>
+    <img src="z6_2" alt="описание" />
+    <input type="text" id="input2" />
+    <button onclick="check('2', '-8')">Проверить</button>
+    <div id="result2"></div>
+  </div>
+
+  <div class="card">
+    <h2>3. Найдите корень уравнение:</h2>
+    <img src="z6_3.png" alt="описание" />
+    <input type="text" id="input3" />
+    <button onclick="check('3', '7')">Проверить</button>
+    <div id="result3"></div>
+  </div>
+  
+  <div class="card">
+    <h2>4. Найдите корень уравнение:</h2>
+    <img src="z6_4.png" alt="описание" />
+    <input type="text" id="input4" />
+    <button onclick="check('4', '6')">Проверить</button>
+    <div id="result4"></div>
+  </div>
+  
+  <div class="card">
+    <h2>5. Найдите корень уравнение:</h2>
+    <img src="z6_5.png" alt="описание" />
+    <input type="text" id="input5" />
+    <button onclick="check('5', '10')">Проверить</button>
+    <div id="result5"></div>
+  </div>
+
+  <div class="card">
+    <h2>6. Найдите корень уравнение:</h2>
+    <img src="z6_6.png" alt="описание" />
+    <input type="text" id="input6" />
+    <button onclick="check('6', '17')">Проверить</button>
+    <div id="result6"></div>
+  </div>
+
+  <div class="card">
+    <h2>7. Найдите корень уравнение:</h2>
+    <img src="z6_7.png" alt="описание" />
+    <input type="text" id="input7" />
+    <button onclick="check('7', '9')">Проверить</button>
+    <div id="result7"></div>
+  </div>
+  
+  <div class="card">
+    <h2>8. Найдите корень уравнение:</h2>
+    <img src="z6_8.png" alt="описание" />
+    <input type="text" id="input8" />
+    <button onclick="check('8', '-4')">Проверить</button>
+    <div id="result8"></div>
+  </div>
+  
+  <div class="card">
+    <h2>9. Найдите корень уравнение:</h2>
+    <img src="z6_9.png" alt="описание" />
+    <input type="text" id="input9" />
+    <button onclick="check('9', '9')">Проверить</button>
+    <div id="result9"></div>
+  </div>
+
+  <div class="card">
+    <h2>10. Найдите корень уравнение:</h2>
+    <img src="z6_10.png" alt="описание" />
+    <input type="text" id="input10" />
+    <button onclick="check('10', '1')">Проверить</button>
+    <div id="result10"></div>
+  </div>
+
+  <div class="card">
+    <h2>11. Найдите корень уравнение:</h2>
+    <img src="z6_11.png" alt="описание" />
+    <input type="text" id="input11" />
+    <button onclick="check('11', '12')">Проверить</button>
+    <div id="result11"></div>
+  </div>
+  
+  <div class="card">
+    <h2>12. Найдите корень уравнение:</h2>
+    <img src="z6_12.png" alt="описание" />
+    <input type="text" id="input12" />
+    <button onclick="check('12', '13')">Проверить</button>
+    <div id="result12"></div>
+  </div>
+  
+  <div class="card">
+    <h2>13. Найдите корень уравнение:</h2>
+    <img src="z6_13.png" alt="описание" />
+    <input type="text" id="input13" />
+    <button onclick="check('13', '-1')">Проверить</button>
+    <div id="result13"></div>
+  </div>
+  
+  <div class="card">
+    <h2>14. Найдите корень уравнение:</h2>
+    <img src="z6_14.png" alt="описание" />
+    <input type="text" id="input14" />
+    <button onclick="check('14', '4')">Проверить</button>
+    <div id="result14"></div>
+  </div>
+
+  <div class="card">
+    <h2>15. Найдите корень уравнение:</h2>
+    <img src="z6_15.png" alt="описание" />
+    <input type="text" id="input15" />
+    <button onclick="check('15', '24')">Проверить</button>
+    <div id="result15"></div>
+  </div>
+
+  <div class="card">
+    <h2>16. Найдите корень уравнение:</h2>
+    <img src="z6_16.png" alt="описание" />
+    <input type="text" id="input16" />
+    <button onclick="check('16', '4')">Проверить</button>
+    <div id="result16"></div>
+  </div>
+  
+  <div class="card">
+    <h2>17. Найдите корень уравнение:</h2>
+    <img src="z6_17.png" alt="описание" />
+    <input type="text" id="input17" />
+    <button onclick="check('17', '8')">Проверить</button>
+    <div id="result17"></div>
+  </div>
+  
+  <div class="card">
+    <h2>18. Найдите корень уравнение:</h2>
+    <img src="z6_18.png" alt="описание" />
+    <input type="text" id="input18" />
+    <button onclick="check('18', '7')">Проверить</button>
+    <div id="result18"></div>
+  </div>
+  
+  <div class="card">
+    <h2>19. Найдите корень уравнение:</h2>
+    <img src="z6_19.png" alt="описание" />
+    <input type="text" id="input19" />
+    <button onclick="check('19', '5')">Проверить</button>
+    <div id="result19"></div>
+  </div>
+  
+  <div class="card">
+    <h2>20. Найдите корень уравнение:</h2>
+    <img src="z6_20.png" alt="описание" />
+    <input type="text" id="input20" />
+    <button onclick="check('20', '-4')">Проверить</button>
+    <div id="result20"></div>
+  </div>
+  
+  <div class="card">
+    <h2>21. Найдите корень уравнение:</h2>
+    <img src="z6_21.png" alt="описание" />
+    <input type="text" id="input21" />
+    <button onclick="check('21', '3')">Проверить</button>
+    <div id="result21"></div>
+  </div>
+  
+  <div class="card">
+    <h2>22. Найдите корень уравнение:</h2>
+    <img src="z6_22.png" alt="описание" />
+    <input type="text" id="input22" />
+    <button onclick="check('22', '2')">Проверить</button>
+    <div id="result22"></div>
+  </div>
+  
+  <div class="card">
+    <h2>23. Найдите корень уравнение:</h2>
+    <img src="z6_23.png" alt="описание" />
+    <input type="text" id="input23" />
+    <button onclick="check('23', '-1')">Проверить</button>
+    <div id="result23"></div>
+  </div>
+  
+  <div class="card">
+    <h2>24. Найдите корень уравнение:</h2>
+    <img src="z6_24.png" alt="описание" />
+    <input type="text" id="input24" />
+    <button onclick="check('24', '7')">Проверить</button>
+    <div id="result24"></div>
+  </div>
+  
+  <div class="card">
+    <h2>25. Найдите корень уравнение:</h2>
+    <img src="z6_25.png" alt="описание" />
+    <input type="text" id="input25" />
+    <button onclick="check('25', '2')">Проверить</button>
+    <div id="result25"></div>
+  </div>
+  
+  <div class="card">
+    <h2>26. Найдите корень уравнение:</h2>
+    <img src="z6_26.png" alt="описание" />
+    <input type="text" id="input26" />
+    <button onclick="check('26', '58')">Проверить</button>
+    <div id="result26"></div>
+  </div>
+  
+  <div class="card">
+    <h2>27. Найдите корень уравнение:</h2>
+    <img src="z6_27.png" alt="описание" />
+    <input type="text" id="input27" />
+    <button onclick="check('27', '8')">Проверить</button>
+    <div id="result27"></div>
+  </div>
+  
+  <div class="card">
+    <h2>28. Найдите корень уравнение:</h2>
+    <img src="z6_28.png" alt="описание" />
+    <input type="text" id="input28" />
+    <button onclick="check('28', '5')">Проверить</button>
+    <div id="result28"></div>
+  </div>
+  
+  <div class="card">
+    <h2>29. Найдите корень уравнение:</h2>
+    <img src="z6_29.png" alt="описание" />
+    <input type="text" id="input29" />
+    <button onclick="check('29', '4')">Проверить</button>
+    <div id="result29"></div>
+  </div>
+  
+  <div class="card">
+    <h2>30. Найдите корень уравнение:</h2>
+    <img src="z6_30.png" alt="описание" />
+    <input type="text" id="input30" />
+    <button onclick="check('30', '1')">Проверить</button>
+    <div id="result30"></div>
+  </div>
+  
+  <div class="card">
+    <h2>31. Найдите корень уравнение:</h2>
+    <img src="z6_31.png" alt="описание" />
+    <input type="text" id="input31" />
+    <button onclick="check('31', '3')">Проверить</button>
+    <div id="result31"></div>
+  </div>
+  
+  <div class="card">
+    <h2>32. Найдите корень уравнение:</h2>
+    <img src="z6_32.png" alt="описание" />
+    <input type="text" id="input32" />
+    <button onclick="check('32', '-9')">Проверить</button>
+    <div id="result32"></div>
+  </div>
+  
+  <div class="card">
+    <h2>33. Найдите корень уравнение:</h2>
+    <img src="z6_33.png" alt="описание" />
+    <input type="text" id="input33" />
+    <button onclick="check('33', '6')">Проверить</button>
+    <div id="result33"></div>
+  </div>
+    
+  <div class="card">
+    <h2>34. Найдите корень уравнение:</h2>
+    <img src="z6_34.png" alt="описание" />
+    <input type="text" id="input34" />
+    <button onclick="check('34', '6')">Проверить</button>
+    <div id="result34"></div>
+  </div>
+  
+  <div class="card">
+    <h2>35. Найдите корень уравнение:</h2>
+    <img src="z6_35.png" alt="описание" />
+    <input type="text" id="input35" />
+    <button onclick="check('35', '6')">Проверить</button>
+    <div id="result35"></div>
+  </div>
+  
+  <div class="card">
+    <h2>36. Найдите корень уравнение:</h2>
+    <img src="z6_36.png" alt="описание" />
+    <input type="text" id="input36" />
+    <button onclick="check('36', '1,4')">Проверить</button>
+    <div id="result36"></div>
+  </div>
+  
+  <div class="card">
+    <h2>37. Найдите корень уравнение:</h2>
+    <img src="z6_37.png" alt="описание" />
+    <input type="text" id="input37" />
+    <button onclick="check('37', '68')">Проверить</button>
+    <div id="result37"></div>
+  </div>
+  
+  <div class="card">
+    <h2>38. Найдите корень уравнение:</h2>
+    <img src="z6_38.png" alt="описание" />
+    <input type="text" id="input38" />
+    <button onclick="check('38', '7')">Проверить</button>
+    <div id="result38"></div>
+  </div>
+  
+  <div class="card">
+    <h2>39. Найдите корень уравнение:</h2>
+    <img src="z6_39.png" alt="описание" />
+    <input type="text" id="input39" />
+    <button onclick="check('39', '-5')">Проверить</button>
+    <div id="result39"></div>
+  </div>
+ </body>
+</html>
