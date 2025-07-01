@@ -3,75 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Задание 1 — ЕГЭ по математике</title>
-  <script>
-    function checkAnswer() {
-      const input = document.getElementById("answer").value.trim();
-      const result = document.getElementById("result");
-      const correctAnswer = "13";
-
-      if (input === correctAnswer) {
-        result.textContent = "✔ Верно!";
-        result.style.color = "green";
-      } else {
-        result.textContent = "✘ Неверно";
-        result.style.color = "red";
-      }
-    }
-  </script>
+  <title>Подготовка к ЕГЭ — Задания</title>
   <style>
     body {
       font-family: Inter, sans-serif;
       background-color: #f9fafb;
       padding: 2rem;
       color: #111827;
+      text-align: center;
     }
-    .card {
-      background-color: white;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1rem;
       max-width: 600px;
       margin: 0 auto;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 1rem 0;
-    }
-    input {
-      padding: 0.5rem 1rem;
-      border: 1px solid #d1d5db;
-      border-radius: 0.5rem;
-      margin-right: 0.5rem;
-    }
-    button {
+    .task-button {
       background-color: #3b82f6;
       color: white;
       border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
       cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.2s ease;
     }
-    button:hover {
+    .task-button:hover {
       background-color: #2563eb;
-    }
-    #result {
-      margin-top: 1rem;
-      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Задание 1</h1>
-    <p>В треугольнике ABC угол C равен 90°, AC = 4,8, sinA = 7/25. Найдите AB.</p>
-    <img src="02c8b1e8-e3ad-4dc2-b9b0-b63864abc935.png" alt="Треугольник ABC">
-    <div>
-      <input type="text" id="answer" placeholder="Ваш ответ">
-      <button onclick="checkAnswer()">Проверить</button>
-    </div>
-    <div id="result"></div>
+  <h1>Выберите задание</h1>
+  <div class="button-grid">
+    <a href="zadanie1.html"><button class="task-button">Задание 1</button></a>
+    <a href="zadanie2.html"><button class="task-button">Задание 2</button></a>
+    <a href="zadanie3.html"><button class="task-button">Задание 3</button></a>
+    <a href="zadanie4.html"><button class="task-button">Задание 4</button></a>
+    <a href="zadanie5.html"><button class="task-button">Задание 5</button></a>
+    <a href="zadanie6.html"><button class="task-button">Задание 6</button></a>
+    <a href="zadanie7.html"><button class="task-button">Задание 7</button></a>
+    <a href="zadanie8.html"><button class="task-button">Задание 8</button></a>
+    <a href="zadanie9.html"><button class="task-button">Задание 9</button></a>
+    <a href="zadanie10.html"><button class="task-button">Задание 10</button></a>
+    <a href="zadanie11.html"><button class="task-button">Задание 11</button></a>
+    <a href="zadanie12.html"><button class="task-button">Задание 12</button></a>
   </div>
 </body>
 </html>
