@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 12</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card"> 
+    <img src="z12_1.png" alt="Производная" />
+    <input type="text" id="input1" />
+    <button onclick="check('1', '8')">Проверить</button>
+    <div id="result1"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_2.png" alt="Производная" />
+    <input type="text" id="input2" />
+    <button onclick="check('2', '19')">Проверить</button>
+    <div id="result2"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_3.png" alt="Производная" />
+    <input type="text" id="input3" />
+    <button onclick="check('3', '15')">Проверить</button>
+    <div id="result3"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_4.png" alt="Производная" />
+    <input type="text" id="input4" />
+    <button onclick="check('4', '40')">Проверить</button>
+    <div id="result4"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_5.png" alt="Производная" />
+    <input type="text" id="input5" />
+    <button onclick="check('5', '2')">Проверить</button>
+    <div id="result5"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_6.png" alt="Производная" />
+    <input type="text" id="input6" />
+    <button onclick="check('6', '-36')">Проверить</button>
+    <div id="result6"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_7.png" alt="Производная" />
+    <input type="text" id="input7" />
+    <button onclick="check('7', '7')">Проверить</button>
+    <div id="result7"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_8.png" alt="Производная" />
+    <input type="text" id="input8" />
+    <button onclick="check('8', '8')">Проверить</button>
+    <div id="result8"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_9.png" alt="Производная" />
+    <input type="text" id="input9" />
+    <button onclick="check('9', '-6')">Проверить</button>
+    <div id="result9"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_10.png" alt="Производная" />
+    <input type="text" id="input10" />
+    <button onclick="check('10', '-7')">Проверить</button>
+    <div id="result10"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_11.png" alt="Производная" />
+    <input type="text" id="input11" />
+    <button onclick="check('11', '8')">Проверить</button>
+    <div id="result11"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_12.png" alt="Производная" />
+    <input type="text" id="input12" />
+    <button onclick="check('12', '-2')">Проверить</button>
+    <div id="result12"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_13.png" alt="Производная" />
+    <input type="text" id="input13" />
+    <button onclick="check('13', '5')">Проверить</button>
+    <div id="result13"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_14.png" alt="Производная" />
+    <input type="text" id="input14" />
+    <button onclick="check('14', '9')">Проверить</button>
+    <div id="result14"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_15.png" alt="Производная" />
+    <input type="text" id="input15" />
+    <button onclick="check('15', '13')">Проверить</button>
+    <div id="result15"></div>
+  </div>
+
+  <div class="card"> 
+    <img src="z12_16.png" alt="Производная" />
+    <input type="text" id="input16" />
+    <button onclick="check('16', '3')">Проверить</button>
+    <div id="result16"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_17.png" alt="Производная" />
+    <input type="text" id="input17" />
+    <button onclick="check('17', '4')">Проверить</button>
+    <div id="result17"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_18.png" alt="Производная" />
+    <input type="text" id="input18" />
+    <button onclick="check('18', '7,5')">Проверить</button>
+    <div id="result18"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_19.png" alt="Производная" />
+    <input type="text" id="input19" />
+    <button onclick="check('19', '58')">Проверить</button>
+    <div id="result19"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_20.png" alt="Производная" />
+    <input type="text" id="input20" />
+    <button onclick="check('20', '36')">Проверить</button>
+    <div id="result20"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_21.png" alt="Производная" />
+    <input type="text" id="input21" />
+    <button onclick="check('21', '-83')">Проверить</button>
+    <div id="result21"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_22.png" alt="Производная" />
+    <input type="text" id="input22" />
+    <button onclick="check('22', '3')">Проверить</button>
+    <div id="result22"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_23.png" alt="Производная" />
+    <input type="text" id="input23" />
+    <button onclick="check('23', '3')">Проверить</button>
+    <div id="result23"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_24.png" alt="Производная" />
+    <input type="text" id="input24" />
+    <button onclick="check('24', '5,1')">Проверить</button>
+    <div id="result24"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_25.png" alt="Производная" />
+    <input type="text" id="input25" />
+    <button onclick="check('25', '-83')">Проверить</button>
+    <div id="result25"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_26.png" alt="Производная" />
+    <input type="text" id="input26" />
+    <button onclick="check('26', '9')">Проверить</button>
+    <div id="result26"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_27.png" alt="Производная" />
+    <input type="text" id="input27" />
+    <button onclick="check('27', '10')">Проверить</button>
+    <div id="result27"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_28.png" alt="Производная" />
+    <input type="text" id="input28" />
+    <button onclick="check('28', '-2')">Проверить</button>
+    <div id="result28"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_29.png" alt="Производная" />
+    <input type="text" id="input29" />
+    <button onclick="check('29', '10')">Проверить</button>
+    <div id="result29"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_30.png" alt="Производная" />
+    <input type="text" id="input30" />
+    <button onclick="check('30', '-8')">Проверить</button>
+    <div id="result30"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_31.png" alt="Производная" />
+    <input type="text" id="input31" />
+    <button onclick="check('31', '-35')">Проверить</button>
+    <div id="result31"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_32.png" alt="Производная" />
+    <input type="text" id="input32" />
+    <button onclick="check('32', '-2')">Проверить</button>
+    <div id="result32"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_33.png" alt="Производная" />
+    <input type="text" id="input33" />
+    <button onclick="check('33', '4')">Проверить</button>
+    <div id="result33"></div>
+  </div>
+    
+  <div class="card"> 
+    <img src="z12_34.png" alt="Производная" />
+    <input type="text" id="input34" />
+    <button onclick="check('34', '32')">Проверить</button>
+    <div id="result34"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_35.png" alt="Производная" />
+    <input type="text" id="input35" />
+    <button onclick="check('35', '2,2')">Проверить</button>
+    <div id="result35"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_36.png" alt="Производная" />
+    <input type="text" id="input36" />
+    <button onclick="check('36', '23')">Проверить</button>
+    <div id="result36"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_37.png" alt="Производная" />
+    <input type="text" id="input37" />
+    <button onclick="check('37', '5')">Проверить</button>
+    <div id="result37"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_38.png" alt="Производная" />
+    <input type="text" id="input38" />
+    <button onclick="check('38', '144')">Проверить</button>
+    <div id="result38"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_39.png" alt="Производная" />
+    <input type="text" id="input39" />
+    <button onclick="check('39', '-10')">Проверить</button>
+    <div id="result39"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_40.png" alt="Производная" />
+    <input type="text" id="input40" />
+    <button onclick="check('40', '81')">Проверить</button>
+    <div id="result40"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_41.png" alt="Производная" />
+    <input type="text" id="input41" />
+    <button onclick="check('41', '-40')">Проверить</button>
+    <div id="result41"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_42.png" alt="Производная" />
+    <input type="text" id="input42" />
+    <button onclick="check('42', '-2')">Проверить</button>
+    <div id="result42"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_43.png" alt="Производная" />
+    <input type="text" id="input43" />
+    <button onclick="check('43', '-29')">Проверить</button>
+    <div id="result43"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_44.png" alt="Производная" />
+    <input type="text" id="input44" />
+    <button onclick="check('44', '8')">Проверить</button>
+    <div id="result44"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_45.png" alt="Производная" />
+    <input type="text" id="input45" />
+    <button onclick="check('45', '8')">Проверить</button>
+    <div id="result45"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_46.png" alt="Производная" />
+    <input type="text" id="input46" />
+    <button onclick="check('46', '-6')">Проверить</button>
+    <div id="result46"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_47.png" alt="Производная" />
+    <input type="text" id="input47" />
+    <button onclick="check('47', '3')">Проверить</button>
+    <div id="result47"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_48.png" alt="Производная" />
+    <input type="text" id="input48" />
+    <button onclick="check('48', '3')">Проверить</button>
+    <div id="result48"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_49.png" alt="Производная" />
+    <input type="text" id="input49" />
+    <button onclick="check('49', '3')">Проверить</button>
+    <div id="result49"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_50.png" alt="Производная" />
+    <input type="text" id="input50" />
+    <button onclick="check('50', '6')">Проверить</button>
+    <div id="result50"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_51.png" alt="Производная" />
+    <input type="text" id="input51" />
+    <button onclick="check('51', '-5')">Проверить</button>
+    <div id="result51"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_52.png" alt="Производная" />
+    <input type="text" id="input52" />
+    <button onclick="check('52', '18')">Проверить</button>
+    <div id="result52"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_53.png" alt="Производная" />
+    <input type="text" id="input53" />
+    <button onclick="check('53', '196')">Проверить</button>
+    <div id="result53"></div>
+  </div>
+  
+  <div class="card"> 
+    <img src="z12_54.png" alt="Производная" />
+    <input type="text" id="input54" />
+    <button onclick="check('54', '10')">Проверить</button>
+    <div id="result54"></div>
+  </div>
+ </body>
+</html>
