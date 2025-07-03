@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 8</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>1.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечено девять точек: x1, x2, x3, x4, x5, x6, x7, x8, x9. Найдите количество отмеченных точек, в которых производная функции f(x) отрицательна.</p>
+    <img src="z8_1.png" alt="Производные" />
+    <input type="text" id="input1" />
+    <button onclick="check('1', '4')">Проверить</button>
+    <div id="result1"></div>
+  </div>
+
+  <div class="card">
+    <h2>2.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_2.png" alt="Производные" />
+    <input type="text" id="input2" />
+    <button onclick="check('2', '-0,4')">Проверить</button>
+    <div id="result2"></div>
+  </div>
+
+  <div class="card">
+    <h2>3.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечено восемь точек: x1, x2, x3, x4, x5, x6, x7, x8. Найдите количество отмеченных точек, в которых производная функции f(x) положительна.</p>
+    <img src="z8_3.png" alt="Производные" />
+    <input type="text" id="input3" />
+    <button onclick="check('3', '2')">Проверить</button>
+    <div id="result3"></div>
+  </div>
+  
+  <div class="card">
+    <h2>4.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_4.png" alt="Производные" />
+    <input type="text" id="input4" />
+    <button onclick="check('4', '1,6')">Проверить</button>
+    <div id="result4"></div>
+  </div>
+  
+  <div class="card">
+    <h2>5.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−19;3). Найдите количество точек экстремума функции f(x), принадлежащих отрезку [−17;−4].</p>
+    <img src="z8_5.png" alt="Производные" />
+    <input type="text" id="input5" />
+    <button onclick="check('5', '4')">Проверить</button>
+    <div id="result5"></div>
+  </div>
+
+  <div class="card">
+    <h2>6.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−9;4). В какой точке отрезка [−2;3] функция f(x) принимает наименьшее значение?</p>
+    <img src="z8_6.png" alt="Производные" />
+    <input type="text" id="input6" />
+    <button onclick="check('6', '3')">Проверить</button>
+    <div id="result6"></div>
+  </div>
+
+  <div class="card">
+    <h2>7.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_7.png" alt="Производные" />
+    <input type="text" id="input7" />
+    <button onclick="check('7', '1,5')">Проверить</button>
+    <div id="result7"></div>
+  </div>
+  
+  <div class="card">
+    <h2>8.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−4;8). В какой точке отрезка [−2;3] функция f(x) принимает наибольшее значение?</p>
+    <img src="z8_8.png" alt="Производные" />
+    <input type="text" id="input8" />
+    <button onclick="check('8', '3')">Проверить</button>
+    <div id="result8"></div>
+  </div>
+  
+  <div class="card">
+    <h2>9.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x). На оси абсцисс отмечено одиннадцать точек: x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11. Сколько из этих точек принадлежит промежуткам убывания функции f(x)?</p>
+    <img src="z8_9.png" alt="Производные" />
+    <input type="text" id="input9" />
+    <button onclick="check('9', '6')">Проверить</button>
+    <div id="result9"></div>
+  </div>
+
+  <div class="card">
+    <h2>10.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x). На оси абсцисс отмечено девять точек: x1, x2, x3, x4, x5, x6, x7, x8, x9. Сколько из этих точек принадлежит промежуткам убывания функции f(x)?</p>
+    <img src="z8_10.png" alt="Производные" />
+    <input type="text" id="input10" />
+    <button onclick="check('10', '2')">Проверить</button>
+    <div id="result10"></div>
+  </div>
+
+  <div class="card">
+    <h2>11.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечены точки − 1, 2, 3, 4. В какой из этих точек значение производной наибольшее? В ответе укажите эту точку.</p>
+    <img src="z8_11.png" alt="Производные" />
+    <input type="text" id="input11" />
+    <button onclick="check('11', '-1')">Проверить</button>
+    <div id="result11"></div>
+  </div>
+  
+  <div class="card">
+    <h2>12.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x). На оси абсцисс отмечено семь точек: x1, x2, x3, x4, x5, x6, x7. Сколько из этих точек принадлежит промежуткам убывания функции f(x)?</p>
+    <img src="z8_12.png" alt="Производные" />
+    <input type="text" id="input12" />
+    <button onclick="check('12', '2')">Проверить</button>
+    <div id="result12"></div>
+  </div>
+  
+  <div class="card">
+    <h2>13.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_13.png" alt="Производные" />
+    <input type="text" id="input13" />
+    <button onclick="check('13', '-3')">Проверить</button>
+    <div id="result13"></div>
+  </div>
+  
+  <div class="card">
+    <h2>14.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x). На оси абсцисс отмечено восемь точек: x1, x2, x3, x4, x5, x6, x7, x8. Сколько из этих точек принадлежит промежуткам возрастания функции f(x)?</p>
+    <img src="z8_14.png" alt="Производные" />
+    <input type="text" id="input14" />
+    <button onclick="check('14', '4')">Проверить</button>
+    <div id="result14"></div>
+  </div>
+
+  <div class="card">
+    <h2>15.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−20;4). Найдите количество точек экстремума функции f(x), принадлежащих отрезку [−16;1].</p>
+    <img src="z8_15.png" alt="Производные" />
+    <input type="text" id="input15" />
+    <button onclick="check('15', '5')">Проверить</button>
+    <div id="result15"></div>
+  </div>
+
+  <div class="card">
+    <h2>16.  </h2>
+    <p>На рисунке изображён график функции y=f(x), определённой на интервале (−10;3). Найдите количество корней уравнения f'(x)=0, принадлежащих отрезку [−7;2].</p>
+    <img src="z8_16.png" alt="Производные" />
+    <input type="text" id="input16" />
+    <button onclick="check('16', '5')">Проверить</button>
+    <div id="result16"></div>
+  </div>
+  
+  <div class="card">
+    <h2>17.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_17.png" alt="Производные" />
+    <input type="text" id="input17" />
+    <button onclick="check('17', '-0,25')">Проверить</button>
+    <div id="result17"></div>
+  </div>
+  
+  <div class="card">
+    <h2>18.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечено десять точек: x1, x2, x3, x4, x5, x6, x7, x8, x9, x10. Найдите количество отмеченных точек, в которых производная функции f(x) отрицательна.</p>
+    <img src="z8_18.png" alt="Производные" />
+    <input type="text" id="input18" />
+    <button onclick="check('18', '6')">Проверить</button>
+    <div id="result18"></div>
+  </div>
+  
+  <div class="card">
+    <h2>19.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечены точки −2, −1, 3, 4. В какой из этих точек значение производной наименьшее? В ответе укажите эту точку.</p>
+    <img src="z8_19.png" alt="Производные" />
+    <input type="text" id="input19" />
+    <button onclick="check('19', '-1')">Проверить</button>
+    <div id="result19"></div>
+  </div>
+  
+  <div class="card">
+    <h2>20.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−4;8). Найдите точку экстремума функции f(x), принадлежащую отрезку [1;6].</p>
+    <img src="z8_20.png" alt="Производные" />
+    <input type="text" id="input20" />
+    <button onclick="check('20', '4')">Проверить</button>
+    <div id="result20"></div>
+  </div>
+  
+  <div class="card">
+    <h2>21.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−5;14). Найдите количество точек минимума функции f(x), принадлежащих отрезку [−4;9].</p>
+    <img src="z8_21.png" alt="Производные" />
+    <input type="text" id="input21" />
+    <button onclick="check('21', '4')">Проверить</button>
+    <div id="result21"></div>
+  </div>
+  
+  <div class="card">
+    <h2>22.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−15;5). Найдите количество точек максимума функции f(x), принадлежащих отрезку [−11;4].</p>
+    <img src="z8_22.png" alt="Производные" />
+    <input type="text" id="input22" />
+    <button onclick="check('22', '2')">Проверить</button>
+    <div id="result22"></div>
+  </div>
+  
+  <div class="card">
+    <h2>23.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x). На оси абсцисс отмечено десять точек: x1, x2, x3, x4, x5, x6, x7, x8, x9, x10. Сколько из этих точек принадлежит промежуткам возрастания функции f(x)?</p>
+    <img src="z8_23.png" alt="Производные" />
+    <input type="text" id="input23" />
+    <button onclick="check('23', '6')">Проверить</button>
+    <div id="result23"></div>
+  </div>
+  
+  <div class="card">
+    <h2>24.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−10;7). Найдите количество точек минимума функции f(x), принадлежащих отрезку [−2;6].</p>
+    <img src="z8_24.png" alt="Производные" />
+    <input type="text" id="input24" />
+    <button onclick="check('24', '1')">Проверить</button>
+    <div id="result24"></div>
+  </div>
+  
+  <div class="card">
+    <h2>25.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_25.png" alt="Производные" />
+    <input type="text" id="input25" />
+    <button onclick="check('25', '1,4')">Проверить</button>
+    <div id="result25"></div>
+  </div>
+  
+  <div class="card">
+    <h2>26.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−12;12). Найдите количество точек максимума функции f(x), принадлежащих отрезку [−6;11].</p>
+    <img src="z8_26.png" alt="Производные" />
+    <input type="text" id="input26" />
+    <button onclick="check('26', '5')">Проверить</button>
+    <div id="result26"></div>
+  </div>
+  
+  <div class="card">
+    <h2>27.  </h2>
+    <p>На рисунке изображён график функции y=f(x), определённой на интервале (−5;4). Найдите корень уравнения f'(x)=0.</p>
+    <img src="z8_27.png" alt="Производные" />
+    <input type="text" id="input27" />
+    <button onclick="check('27', '-2')">Проверить</button>
+    <div id="result27"></div>
+  </div>
+  
+  <div class="card">
+    <h2>28.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_28.png" alt="Производные" />
+    <input type="text" id="input28" />
+    <button onclick="check('28', '1,2')">Проверить</button>
+    <div id="result28"></div>
+  </div>
+  
+  <div class="card">
+    <h2>29.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_29.png" alt="Производные" />
+    <input type="text" id="input29" />
+    <button onclick="check('29', '-1,25')">Проверить</button>
+    <div id="result29"></div>
+  </div>
+  
+  <div class="card">
+    <h2>30.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−5;5). Найдите точку максимума функции f(x).</p>
+    <img src="z8_30.png" alt="Производные" />
+    <input type="text" id="input30" />
+    <button onclick="check('30', '2')">Проверить</button>
+    <div id="result30"></div>
+  </div>
+  
+  <div class="card">
+    <h2>31.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_31.png" alt="Производные" />
+    <input type="text" id="input31" />
+    <button onclick="check('31', '-1,4')">Проверить</button>
+    <div id="result31"></div>
+  </div>
+  
+  <div class="card">
+    <h2>32.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_32.png" alt="Производные" />
+    <input type="text" id="input32" />
+    <button onclick="check('32', '1,8')">Проверить</button>
+    <div id="result32"></div>
+  </div>
+  
+  <div class="card">
+    <h2>33.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечены точки 1, 2, 3, 4. В какой из этих точек значение производной функции f(x) наименьшее? В ответе укажите эту точку</p>
+    <img src="z8_33.png" alt="Производные" />
+    <input type="text" id="input33" />
+    <button onclick="check('33', '2')">Проверить</button>
+    <div id="result33"></div>
+  </div>
+    
+  <div class="card">
+    <h2>34.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_34.png" alt="Производные" />
+    <input type="text" id="input34" />
+    <button onclick="check('34', '-2,5')">Проверить</button>
+    <div id="result34"></div>
+  </div>
+  
+  <div class="card">
+    <h2>35.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечены точки −2, 1, 3, 4. В какой из этих точек значение производной функции f(x) наибольшее? В ответе укажите эту точку.</p>
+    <img src="z8_35.png" alt="Производные" />
+    <input type="text" id="input35" />
+    <button onclick="check('35', '4')">Проверить</button>
+    <div id="result35"></div>
+  </div>
+  
+  <div class="card">
+    <h2>36.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−12;11). Найдите количество точек максимума функции f(x), принадлежащих отрезку [−11;5].</p>
+    <img src="z8_36.png" alt="Производные" />
+    <input type="text" id="input36" />
+    <button onclick="check('36', '4')">Проверить</button>
+    <div id="result36"></div>
+  </div>
+  
+  <div class="card">
+    <h2>37.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_37.png" alt="Производные" />
+    <input type="text" id="input37" />
+    <button onclick="check('37', '1,4')">Проверить</button>
+    <div id="result37"></div>
+  </div>
+  
+  <div class="card">
+    <h2>38.  </h2>
+    <p>На рисунке изображён график y=f'(x) — производной функции f(x), определённой на интервале (−6;5). В какой точке отрезка [−5;−2] функция f(x) принимает наименьшее значение?</p>
+    <img src="z8_38.png" alt="Производные" />
+    <input type="text" id="input38" />
+    <button onclick="check('38', '-5')">Проверить</button>
+    <div id="result38"></div>
+  </div>
+  
+  <div class="card">
+    <h2>39.  </h2>
+    <p>На рисунке изображены график функции y=f(x) и касательная к нему в точке с абсциссой x0. Найдите значение производной функции f(x) в точке x0.</p>
+    <img src="z8_39.png" alt="Производные" />
+    <input type="text" id="input39" />
+    <button onclick="check('39', '0,2')">Проверить</button>
+    <div id="result39"></div>
+  </div>
+  
+  <div class="card">
+    <h2>40.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечено десять точек: x1, x2, x3, x4, x5, x6, x7, x8, x9, x10. В ответе укажите количество точек (из отмеченных), в которых производная функции f(x) отрицательна.</p>
+    <img src="z8_40.png" alt="Производные" />
+    <input type="text" id="input40" />
+    <button onclick="check('40', '7')">Проверить</button>
+    <div id="result40"></div>
+  </div>
+  
+  <div class="card">
+    <h2>41.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечено восемь точек: x1, x2, x3, x4, x5, x6, x7, x8. В ответе укажите количество точек (из отмеченных), в которых производная функции f(x) положительна.</p>
+    <img src="z8_41.png" alt="Производные" />
+    <input type="text" id="input41" />
+    <button onclick="check('41', '5')">Проверить</button>
+    <div id="result41"></div>
+  </div>
+  
+  <div class="card">
+    <h2>42.  </h2>
+    <p>На рисунке изображён график функции y=f(x). На оси абсцисс отмечено десять точек: x1, x2, x3, x4, x5, x6, x7, x8, x9, x10. Найдите количество отмеченных точек, в которых производная функции f(x) положительна.</p>
+    <img src="z8_42.png" alt="Производные" />
+    <input type="text" id="input42" />
+    <button onclick="check('42', '5')">Проверить</button>
+    <div id="result42"></div>
+  </div>
+ </body>
+</html>
