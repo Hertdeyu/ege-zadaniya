@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Задание 7</title>
+  <style>
+    body {
+      font-family: Inter, sans-serif;
+      background-color: #f9fafb;
+      padding: 2rem;
+      color: #111827;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    input[type="text"] {
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      margin-right: 0.5rem;
+      width: 120px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    #result1, #result2, #result3 {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+    }
+  </style>
+  <script>
+    function check(id, correct) {
+      const input = document.getElementById("input" + id).value.trim();
+      const result = document.getElementById("result" + id);
+      if (input === correct) {
+        result.textContent = "✔ Верно!";
+        result.style.color = "green";
+      } else {
+        result.textContent = "✘ Неверно";
+        result.style.color = "red";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h2>1. Найдите значение выражения</h2>
+    <img src="z7_.png" alt="выражение" />
+    <input type="text" id="input1" />
+    <button onclick="check('1', '4')">Проверить</button>
+    <div id="result1"></div>
+  </div>
+
+  <div class="card">
+    <h2>2. Найдите значение выражения</h2>
+    <img src="z7_2.png" alt="выражение" />
+    <input type="text" id="input2" />
+    <button onclick="check('2', '1,5')">Проверить</button>
+    <div id="result2"></div>
+  </div>
+
+  <div class="card">
+    <h2>3. Найдите значение выражения</h2>
+    <img src="z7_3.png" alt="выражение" />
+    <input type="text" id="input3" />
+    <button onclick="check('3', '4')">Проверить</button>
+    <div id="result3"></div>
+  </div>
+  
+  <div class="card">
+    <h2>4. Найдите значение выражения</h2>
+    <img src="z7_4.png" alt="выражение" />
+    <input type="text" id="input4" />
+    <button onclick="check('4', '4,5')">Проверить</button>
+    <div id="result4"></div>
+  </div>
+  
+  <div class="card">
+    <h2>5. Найдите значение выражения</h2>
+    <img src="z7_5.png" alt="выражение" />
+    <input type="text" id="input5" />
+    <button onclick="check('5', '36')">Проверить</button>
+    <div id="result5"></div>
+  </div>
+
+  <div class="card">
+    <h2>6. Найдите значение выражения</h2>
+    <img src="z7_6.png" alt="выражение" />
+    <input type="text" id="input6" />
+    <button onclick="check('6', '28')">Проверить</button>
+    <div id="result6"></div>
+  </div>
+
+  <div class="card">
+    <h2>7. Найдите значение выражения</h2>
+    <img src="z7_7.png" alt="выражение" />
+    <input type="text" id="input7" />
+    <button onclick="check('7', '-1')">Проверить</button>
+    <div id="result7"></div>
+  </div>
+  
+  <div class="card">
+    <h2>8. Найдите значение выражения</h2>
+    <img src="z7_8.png" alt="выражение" />
+    <input type="text" id="input8" />
+    <button onclick="check('8', '6')">Проверить</button>
+    <div id="result8"></div>
+  </div>
+  
+  <div class="card">
+    <h2>9. Найдите значение выражения</h2>
+    <img src="z7_9.png" alt="выражение" />
+    <input type="text" id="input9" />
+    <button onclick="check('9', '2,5')">Проверить</button>
+    <div id="result9"></div>
+  </div>
+
+  <div class="card">
+    <h2>10. Найдите значение выражения</h2> 
+    <img src="z7_10.png" alt="выражение" />
+    <input type="text" id="input10" />
+    <button onclick="check('10', '4,5')">Проверить</button>
+    <div id="result10"></div>
+  </div>
+
+  <div class="card">
+    <h2>11. Найдите значение выражения</h2> 
+    <img src="z7_11.png" alt="выражение" />
+    <input type="text" id="input11" />
+    <button onclick="check('11', '4')">Проверить</button>
+    <div id="result11"></div>
+  </div>
+  
+  <div class="card">
+    <h2>12. Найдите значение выражения</h2> 
+    <img src="z7_12.png" alt="выражение" />
+    <input type="text" id="input12" />
+    <button onclick="check('12', '2')">Проверить</button>
+    <div id="result12"></div>
+  </div>
+  
+  <div class="card">
+    <h2>13. Найдите значение выражения</h2> 
+    <img src="z7_13.png" alt="выражение" />
+    <input type="text" id="input13" />
+    <button onclick="check('13', '5')">Проверить</button>
+    <div id="result13"></div>
+  </div>
+  
+  <div class="card">
+    <h2>14. Найдите значение выражения</h2> 
+    <img src="z7_14.png" alt="выражение" />
+    <input type="text" id="input14" />
+    <button onclick="check('14', '-1,68')">Проверить</button>
+    <div id="result14"></div>
+  </div>
+
+  <div class="card">
+    <h2>15. Найдите значение выражения</h2> 
+    <img src="z7_15.png" alt="выражение" />
+    <input type="text" id="input15" />
+    <button onclick="check('15', '0,75')">Проверить</button>
+    <div id="result15"></div>
+  </div>
+
+  <div class="card">
+    <h2>16. Найдите значение выражения</h2> 
+    <img src="z7_16.png" alt="выражение" />
+    <input type="text" id="input16" />
+    <button onclick="check('16', '5')">Проверить</button>
+    <div id="result16"></div>
+  </div>
+  
+  <div class="card">
+    <h2>17. Найдите значение выражения</h2> 
+    <img src="z7_17.png" alt="выражение" />
+    <input type="text" id="input17" />
+    <button onclick="check('17', '2')">Проверить</button>
+    <div id="result17"></div>
+  </div>
+  
+  <div class="card">
+    <h2>18. Найдите значение выражения</h2> 
+    <img src="z7_18.png" alt="выражение" />
+    <input type="text" id="input18" />
+    <button onclick="check('18', '2,76')">Проверить</button>
+    <div id="result18"></div>
+  </div>
+  
+  <div class="card">
+    <h2>19. Найдите значение выражения</h2> 
+    <img src="z7_19.png" alt="выражение" />
+    <input type="text" id="input19" />
+    <button onclick="check('19', '6')">Проверить</button>
+    <div id="result19"></div>
+  </div>
+  
+  <div class="card">
+    <h2>20. Найдите значение выражения</h2> 
+    <img src="z7_20.png" alt="выражение" />
+    <input type="text" id="input20" />
+    <button onclick="check('20', '3')">Проверить</button>
+    <div id="result20"></div>
+  </div>
+  
+  <div class="card">
+    <h2>21. Найдите значение выражения</h2> 
+    <img src="z7_21.png" alt="выражение" />
+    <input type="text" id="input21" />
+    <button onclick="check('21', '12')">Проверить</button>
+    <div id="result21"></div>
+  </div>
+  
+  <div class="card">
+    <h2>22. Найдите значение выражения</h2> 
+    <img src="z7_22.png" alt="выражение" />
+    <input type="text" id="input22" />
+    <button onclick="check('22', '-13')">Проверить</button>
+    <div id="result22"></div>
+  </div>
+  
+  <div class="card">
+    <h2>23. Найдите значение выражения</h2> 
+    <img src="z7_23.png" alt="выражение" />
+    <input type="text" id="input23" />
+    <button onclick="check('23', '-0,5')">Проверить</button>
+    <div id="result23"></div>
+  </div>
+  
+  <div class="card">
+    <h2>24. Найдите значение выражения</h2> 
+    <img src="z7_24.png" alt="выражение" />
+    <input type="text" id="input24" />
+    <button onclick="check('24', '4')">Проверить</button>
+    <div id="result24"></div>
+  </div>
+  
+  <div class="card">
+    <h2>25. Найдите значение выражения</h2> 
+    <img src="z7_25.png" alt="выражение" />
+    <input type="text" id="input25" />
+    <button onclick="check('25', '16')">Проверить</button>
+    <div id="result25"></div>
+  </div>
+  
+  <div class="card">
+    <h2>26. Найдите значение выражения</h2> 
+    <img src="z7_26.png" alt="выражение" />
+    <input type="text" id="input26" />
+    <button onclick="check('26', '0,84')">Проверить</button>
+    <div id="result26"></div>
+  </div>
+  
+  <div class="card">
+    <h2>27. Найдите значение выражения</h2> 
+    <img src="z7_27.png" alt="выражение" />
+    <input type="text" id="input27" />
+    <button onclick="check('27', '25')">Проверить</button>
+    <div id="result27"></div>
+  </div>
+  
+  <div class="card">
+    <h2>28. Найдите значение выражения</h2> 
+    <img src="z7_28.png" alt="выражение" />
+    <input type="text" id="input28" />
+    <button onclick="check('28', '0,2')">Проверить</button>
+    <div id="result28"></div>
+  </div>
+  
+  <div class="card">
+    <h2>29. Найдите значение выражения</h2> 
+    <img src="z7_29.png" alt="выражение" />
+    <input type="text" id="input29" />
+    <button onclick="check('29', '0,4')">Проверить</button>
+    <div id="result29"></div>
+  </div>
+  
+  <div class="card">
+    <h2>30. Найдите значение выражения</h2> 
+    <img src="z7_30.png" alt="выражение" />
+    <input type="text" id="input30" />
+    <button onclick="check('30', '27')">Проверить</button>
+    <div id="result30"></div>
+  </div>
+  
+  <div class="card">
+    <h2>31. Найдите значение выражения</h2> 
+    <img src="z7_31.png" alt="выражение" />
+    <input type="text" id="input31" />
+    <button onclick="check('31', '6')">Проверить</button>
+    <div id="result31"></div>
+  </div>
+  
+  <div class="card">
+    <h2>32. Найдите значение выражения</h2> 
+    <img src="z7_32.png" alt="выражение" />
+    <input type="text" id="input32" />
+    <button onclick="check('32', '1')">Проверить</button>
+    <div id="result32"></div>
+  </div>
+  
+  <div class="card">
+    <h2>33. Найдите значение выражения</h2> 
+    <img src="z7_33.png" alt="выражение" />
+    <input type="text" id="input33" />
+    <button onclick="check('33', '12')">Проверить</button>
+    <div id="result33"></div>
+  </div>
+    
+  <div class="card">
+    <h2>34. Найдите значение выражения</h2> 
+    <img src="z7_34.png" alt="выражение" />
+    <input type="text" id="input34" />
+    <button onclick="check('34', '11')">Проверить</button>
+    <div id="result34"></div>
+  </div>
+  
+  <div class="card">
+    <h2>35. Найдите значение выражения</h2> 
+    <img src="z7_35.png" alt="выражение" />
+    <input type="text" id="input35" />
+    <button onclick="check('35', '15')">Проверить</button>
+    <div id="result35"></div>
+  </div>
+  
+  <div class="card">
+    <h2>36. Найдите значение выражения</h2> 
+    <img src="z7_36.png" alt="выражение" />
+    <input type="text" id="input36" />
+    <button onclick="check('36', '0,84')">Проверить</button>
+    <div id="result36"></div>
+  </div>
+  
+  <div class="card">
+    <h2>37. Найдите значение выражения</h2> 
+    <img src="z7_37.png" alt="выражение" />
+    <input type="text" id="input37" />
+    <button onclick="check('37', '3')">Проверить</button>
+    <div id="result37"></div>
+  </div>
+  
+  <div class="card">
+    <h2>38. Найдите значение выражения</h2> 
+    <img src="z7_38.png" alt="выражение" />
+    <input type="text" id="input38" />
+    <button onclick="check('38', '-5')">Проверить</button>
+    <div id="result38"></div>
+  </div>
+  
+  <div class="card">
+    <h2>39. Найдите значение выражения</h2> 
+    <img src="z7_39.png" alt="выражение" />
+    <input type="text" id="input39" />
+    <button onclick="check('39', '2')">Проверить</button>
+    <div id="result39"></div>
+  </div>
+  
+  <div class="card">
+    <h2>40. Найдите значение выражения</h2> 
+    <img src="z7_40.png" alt="выражение" />
+    <input type="text" id="input40" />
+    <button onclick="check('40', '16')">Проверить</button>
+    <div id="result40"></div>
+  </div>
+  
+  <div class="card">
+    <h2>41. Найдите значение выражения</h2> 
+    <img src="z7_41.png" alt="выражение" />
+    <input type="text" id="input41" />
+    <button onclick="check('41', '64')">Проверить</button>
+    <div id="result41"></div>
+  </div>
+  
+  <div class="card">
+    <h2>42. Найдите значение выражения</h2> 
+    <img src="z7_42.png" alt="выражение" />
+    <input type="text" id="input42" />
+    <button onclick="check('42', '18')">Проверить</button>
+    <div id="result42"></div>
+  </div>
+  
+  <div class="card">
+    <h2>43. Найдите значение выражения</h2> 
+    <img src="z7_43.png" alt="выражение" />
+    <input type="text" id="input43" />
+    <button onclick="check('43', '5')">Проверить</button>
+    <div id="result43"></div>
+  </div>
+  
+  <div class="card">
+    <h2>44. Найдите значение выражения</h2> 
+    <img src="z7_44.png" alt="выражение" />
+    <input type="text" id="input44" />
+    <button onclick="check('44', '81')">Проверить</button>
+    <div id="result44"></div>
+  </div>
+  
+  <div class="card">
+    <h2>45. Найдите значение выражения</h2> 
+    <img src="z7_45.png" alt="выражение" />
+    <input type="text" id="input45" />
+    <button onclick="check('45', '6')">Проверить</button>
+    <div id="result45"></div>
+  </div>
+ </body>
+</html>
